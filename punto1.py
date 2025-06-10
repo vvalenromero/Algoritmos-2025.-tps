@@ -121,8 +121,9 @@ superheroes = [
     },
 ]
 
+
+
 def buscar_capitan(lista, objetivo=("Capitan America", "Capitan América"), indice=0): 
-   
     if indice >= len(lista):
         return False
     heroe = lista[indice]
@@ -131,12 +132,12 @@ def buscar_capitan(lista, objetivo=("Capitan America", "Capitan América"), indi
     return buscar_capitan(lista, objetivo, indice + 1)
 
 def listar_superheroes(lista, indice=0): 
-
     if indice >= len(lista):
         return
     heroe = lista[indice]
     print(f"{heroe['name']},  alias: {heroe['alias']}")
     listar_superheroes(lista, indice + 1)
+
 
 if buscar_capitan(superheroes): 
     print("Capitan America está en la lista.")
