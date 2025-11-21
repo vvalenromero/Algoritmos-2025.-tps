@@ -1,5 +1,5 @@
-from cola import Queue  # Importa la clase Queue definida en el módulo cola
-from stack import Stack  # Importa la clase Stack definida en el módulo stack
+from cola import Queue  
+from stack import Stack  
 
 cola_notificaciones = Queue()  # Crea una cola vacía para almacenar notificaciones
 cola_notificaciones.arrive(("11:30", "Facebook", "Nuevo mensaje de Juan"))  # Encola una notificación de Facebook con hora y mensaje
